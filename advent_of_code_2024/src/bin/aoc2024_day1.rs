@@ -8,7 +8,7 @@ fn main() -> io::Result<()> {
     let mut first_column = Vec::new();
     let mut second_column = Vec::new();
     
-    for line in read_lines("src/bin/aoc2024_day1/input")? {
+    for line in read_lines("src/bin/input/aoc2024_day1")? {
         let line = line.unwrap();
         let mut tokens = line.split_whitespace();
         let first = tokens.next().unwrap().parse::<u32>().unwrap();
